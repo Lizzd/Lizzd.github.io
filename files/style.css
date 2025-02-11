@@ -7,6 +7,9 @@
  */
 html{
  }
+svg {
+    stroke: none;
+}
 body{
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 13pt;
