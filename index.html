@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)http://www.cbsr.ia.ac.cn/users/sfzhang/ -->
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <meta name="author" content="zhendong">
+    <meta name="author" content="Zhendong Li">
+    <meta name="description"
+          content="Zhendong Li - PhD student at INSAIT working on multi-agent systems for visual media generation, editing, and understanding.">
     <title>Zhendong Li's Homepage</title>
 
     <!-- CSS  -->
@@ -14,85 +14,40 @@
     <link href="./files/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 
     <link rel="shortcut icon" href="./images/TUM_logo3.png">
-    <script type="text/javascript" src="./files/jquery-1.12.4.min.js.下载"></script>
-    <style>@-moz-keyframes nodeInserted {
-               from {
-                   opacity: 0.99;
-               }
-               to {
-                   opacity: 1;
-               }
-           }
-
-    @-webkit-keyframes nodeInserted {
-        from {
-            opacity: 0.99;
+    <style>
+        .profile-link { margin: 0.3rem 0; }
+        .pub-thumb { width: 300px; height: auto; }
+        .pub-links a { margin-right: 6px; }
+        .pub-note { color: #555; font-size: 0.95em; }
+        .tag-new { color: #d32f2f; font-weight: bold; }
+        .edu-list li, .service-list li { margin-bottom: 0.6rem; overflow: hidden; }
+        .item-desc { padding-left: 0.9rem; color: #444; }
+        .edu-list .date, .service-list .date { margin-left: 1rem; }
+        .edu-list .date, .service-list .date { color: #777; float: right; }
+        @media only screen and (max-width: 600px) {
+            .edu-list .date, .service-list .date { float: none; display: block; margin-left: 0; }
         }
-        to {
-            opacity: 1;
+        @media only screen and (max-width: 992px) {
+            #home.parallax-container { height: auto; padding-bottom: 16px; }
+            nav .nav-wrapper ul.left { display: flex; width: 100%; overflow-x: auto; white-space: nowrap; }
+            nav ul a { padding: 0 10px; }
         }
-    }
-
-    @-o-keyframes nodeInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes nodeInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    embed, object {
-        animation-duration: .001s;
-        -ms-animation-duration: .001s;
-        -moz-animation-duration: .001s;
-        -webkit-animation-duration: .001s;
-        -o-animation-duration: .001s;
-        animation-name: nodeInserted;
-        -ms-animation-name: nodeInserted;
-        -moz-animation-name: nodeInserted;
-        -webkit-animation-name: nodeInserted;
-        -o-animation-name: nodeInserted;
-    }</style>
+    </style>
 </head>
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
 <div class="navbar-fixed">
-
     <nav class="white">
-        <div class="nav-wrapper container"><a id="logo-container" href="https://Yan-Xia.github.io/#"
-                                              class="brand-logo"></a>
+        <div class="nav-wrapper container">
             <ul class="left">
-                <li><a class="nav-item waves-effect waves-light active" href="https://lizzd.github.io/#home">Home</a>
-                </li>
-                <li><a class="nav-item waves-effect waves-light" href="https://lizzd.github.io/#biography">Biography</a>
-                </li>
-                <li><a class="nav-item waves-effect waves-light"
-                       href="https://lizzd.github.io/#internship">Education and Internship</a></li>
-                <li><a class="nav-item waves-effect waves-light" href="https://lizzd.github.io/#news">News</a></li>
-                <li><a class="nav-item waves-effect waves-light" href="https://lizzd.github.io/#publications">Publications</a>
-                </li>
-                <!--                <li><a class="nav-item waves-effect waves-light" href="https://lizzd.github.io/#preprints">Preprints</a>-->
-                <!--                </li>-->
-                <!--<li><a class="nav-item waves-effect waves-light" href="https://Yan-Xia.github.io/#projects">Projects</a></li> -->
-                <li><a class="nav-item waves-effect waves-light"
-                       href="https://lizzd.github.io/#activities">Honor</a></li>
-                <!--<li><a class="nav-item waves-effect waves-light" href="https://Yan-Xia.github.io/#education">Education</a></li>-->
-
-                <!-- <li><a class="nav-item waves-effect waves-light" href="https://Yan-Xia.github.io/#awards">Awards</a></li> -->
-                <!--                <li><a class="nav-item waves-effect waves-light" href="https://lizzd.github.io/#demos">Demos</a></li>-->
+                <li><a class="nav-item waves-effect waves-light active" href="#home">Home</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#biography">Biography</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#education">Education</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#news">News</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#publications">Publications</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#service">Service</a></li>
+                <li><a class="nav-item waves-effect waves-light" href="#activities">Honors</a></li>
             </ul>
-            </ul>
-
         </div>
     </nav>
 </div>
@@ -101,61 +56,49 @@
 <!--==========================================
                    Profile
 ===========================================-->
-
 <div id="home" class="parallax-container scrollspy">
-
 
     <div class="container row cover-block">
 
         <div class="profile-image-block col s12 m12 l4 center">
-            <img class="responsive-img profile-photo z-depth-2" style="height:280px" src="./images/self_img.jpg">
+            <img class="responsive-img profile-photo z-depth-2" style="height:280px" src="./images/self_img_600.jpg"
+                 alt="Zhendong Li">
         </div>
 
         <div class="profile-content-block col s12 m12 l8">
-            <h5 class="profile-name">M.Sc. Zhendong Li </h5>
+            <h5 class="profile-name">Zhendong Li</h5>
 
-            <!-- <hr> -->
-                <h6 class="profile-link"><strong>Researcher in Computer Vision & AI at INSAIT
-                <h6 class="profile-link"><strong>M.Sc. & B.Sc., Technical University of Munich (TUM)
-                <h6 class="profile-link"><strong>Exchange Student, École Polytechnique Fédérale de Lausanne (EPFL)
+            <h6 class="profile-link"><strong>PhD Student, <a href="https://insait.ai/">INSAIT</a></strong></h6>
+            <h6 class="profile-link"><strong>Multi-Agent Systems for Visual Media</strong></h6>
+            <h6 class="profile-link"><strong>M.Sc. &amp; B.Sc., Technical University of Munich (TUM)</strong></h6>
+            <h6 class="profile-link"><strong>Email: zhendong.li@insait.ai</strong></h6>
 
-                            <!-- </strong> <a href="https://www.tum.de/en/"><strong>Chair of Photogrammetrie und Fernerkundung (PF)</strong></a></h6> -->
-                            <!-- <h6 class="profile-link"><strong><a href="https://www.tum.de/en/">Technical University of Munich, Munich, Germany 80333</a></h6> -->
-                            <h6 class="profile-link"><strong>Email: zhendong.li@insait.ai</h6>
+            <h1></h1>
 
-                            <h1></h1>
+            <a href="https://scholar.google.com/citations?user=Bte_54EAAAAJ" title="Google Scholar"><img
+                    class="responsive-img social-photo " src="./images/google_scholar.jpg" alt="Google Scholar"></a>
 
-                            <a href="https://scholar.google.de/citations?user=Bte_54EAAAAJ&hl=zh-CN&oi=ao"><img
-                                    class="responsive-img social-photo " src="./images/google_scholar.jpg"></a>
+            <a href="https://github.com/Lizzd/" title="GitHub"><img class="responsive-img social-photo "
+                                                                  src="./images/github.jpg" alt="GitHub"></a>
 
-                            <a href="https://github.com/Lizzd/"><img class="responsive-img social-photo "
-                                                                     src="./images/github.jpg"></a>
+            <a href="https://www.linkedin.com/in/zhendong-li-82897321b/" title="LinkedIn"><img
+                    class="responsive-img social-photo " src="./images/linkedin.png" alt="LinkedIn"></a>
 
-                            <!--<a href="./files/HuCao_CV.pdf" target="_blank"><img class="responsive-img social-photo " src="./images/cv.png"></a>-->
-
-                            <!--<a href="./images/Wechat_QR_code.jpg" target="_blank"><img class="responsive-img social-photo " src="./images/wechat.png"></a>-->
-
-                            <a href="https://www.linkedin.com/in/zhendong-li-82897321b/"><img
-                                    class="responsive-img social-photo " src="./images/linkedin.png"></a>
-
-                            <a href="https://www.researchgate.net/profile/Zhendong-Li-18"><img
-                                    class="responsive-img social-photo " src="./images/rg.png"></a>
-
+            <a href="https://www.researchgate.net/profile/Zhendong-Li-18" title="ResearchGate"><img
+                    class="responsive-img social-photo " src="./images/rg.png" alt="ResearchGate"></a>
         </div>
 
     </div>
 
-    <div class="parallax"><img src="./images/bg.jpg" alt="Unsplashed background img 1"
+    <div class="parallax"><img src="./images/bg_q80.jpg" alt="background"
                                style="display: block; opacity: 0.35; transform: translate3d(-50%, 1150px, 0px); "></div>
-    <!-- transform: translate3d(-50%, 150px, 0px) -->
 </div>
 
 
 <!--==========================================
-                   About
+                   Biography
 ===========================================-->
 <div class="section about-section scrollspy" id="biography">
-
     <div class="row container">
         <br><br>
         <div class="row">
@@ -169,52 +112,35 @@
 
         <div class="row">
             <p>
-                <!--                I am now a postdoctoral researcher in the <a href="https://cvg.cit.tum.de/">Computer Vision Group</a> at-->
-                <!--                <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a> working with <a-->
-                <!--                    href="https://vision.in.tum.de/members/cremers/">Prof. Daniel Cremers</a>. I am also a research-->
-                <!--                scientist at <a href="https://mcml.ai/">Munich Center for Machine Learning</a>.-->
-                <!--                I obtained my phd degree from TUM supervised by <a href="https://www.pf.bgu.tum.de/en/sta/stilla.html/">Prof.-->
-                <!--                Uwe Stilla</a> and <a href="https://vision.in.tum.de/members/cremers/">Prof. Daniel Cremers</a>,-->
-                <!--                and was a visiting phd student in the <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group-->
-                <!--                (VGG)</a> at University of Oxford working with <a href="https://www.robots.ox.ac.uk/~joao/">Dr. João-->
-                <!--                Henriques</a>.-->
-
-
-                I completed both my Bachelor's and Master's degrees in Electrical Engineering and Information Technology
-                at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>. My undergraduate thesis,
-                supervised by <a href="https://www.ee.cit.tum.de/mst/team/professor-dr-ing-a-w-koch/"> Prof. Alexander
-                W. Koch</a>
-                and <a href="https://www.researchgate.net/profile/Xingchen-Dong">Dr. Xingchen Dong</a>,
-                focused on enhancing the resolution of hyperspectral imaging by
-                using structured-illumination. My master’s thesis, under the guidance of <a
-                    href="https://vision.in.tum.de/members/cremers/">Prof. Daniel Cremers</a> and
-                <a href="https://cvg.cit.tum.de/members/xiya">Dr. Yan Xia</a> explored point cloud localization and
-                multi-modal localization. During my graduate studies,
-                I spent one year as an exchange student in Computer Science at <a
-                    href="https://www.epfl.ch/schools/ic/">École Polytechnique Fédérale de Lausanne
-                (EPFL)</a> . Additionally, during my coursework, I conducted research on human-machine teleoperation
-                under
-                the supervision of <a href="https://www.ce.cit.tum.de/hcr/team/youssef-michel/">Dr. Youssef Michel</a>.
+                I am a PhD student in Computer Science at <a href="https://insait.ai/">INSAIT</a>
+                (Institute for Computer Science, Artificial Intelligence and Technology, in partnership with ETH Zurich
+                and EPFL) since July 2025, advised by
+                <a href="https://insait.ai/prof-luc-van-gool/">Prof. Luc Van Gool</a> and
+                <a href="https://www.jasongt.com/">Prof. Jinjin Gu</a>.
+                My PhD is supported by the INSAIT PhD Fellowship.
             </p>
             <p>
-                Since July 2025, I have been working as a researcher at <a href="https://insait.ai/">INSAIT</a> (Institute for Computer Science, Artificial Intelligence and Technology), working with <a href="https://vision.ee.ethz.ch/people-details.OTAyMzM=.TGlzdC8zMjg3LC0xOTcxNDY1MTc4.html">Prof. Luc Van Gool</a>, <a href="https://www.jasongt.com/">Dr. JinJin Gu</a>, and <a href="https://insait.ai/dr-danda-paudel/">Dr. Danda Paudel</a>, where I focus on using agents to solve vision tasks.
+                My research focuses on <b>multi-agent systems for visual media generation, editing, and
+                understanding</b>: agents that plan, call tools, and coordinate with each other to carry out complex
+                creative tasks end to end, from turning a one-line idea into a narrated film
+                (<a href="https://frameworkers.insait.ai/">FrameWorkers</a>) to turning a task
+                description into an executable ComfyUI workflow
+                (<a href="https://lizzd.github.io/Knowledge-Centric-Agents/">Knowledge-Centric Agents</a>, ECCV 2026).
             </p>
             <p>
-                My research interests include vision agents, agent-based systems for visual tasks, and multi-modal learning.
-
-                <!-- supervised and mentored by
-               <a href="https://www.pf.bgu.tum.de/en/sta/stilla.html/">Prof. Uwe Stilla</a>,
-               <a href="https://vision.in.tum.de/members/cremers/">Prof. Daniel Cremers</a>, and
-               <a href="https://celiang.tongji.edu.cn/info/1300/2743.html/">Prof. Yusheng Xu</a>.   -->
-                <!-- I am a visiting scholar in the <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a> at <a href="https://www.ox.ac.uk/">University of Oxford</a>,
-                working with  <a href="https://www.robots.ox.ac.uk/~joao/">Dr. João Henriques</a>. -->
-                <!-- From 2018.03 to 2018.09, I was a research intern in the Robotic and Autonomous Driving Lab (RAL) of Baidu, working with <a href= "https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Dr. Xinyu Huang</a> and <a href= "https://scholar.google.com/citations?user=yveq40QAAAAJ&hl=en">Prof. Ruigang Yang</a>.
-                I obtained my Master's degree on Computer Science from Xiamen University, supervised by <a href="http://chwang.xmu.edu.cn/index_en.html">Prof. Cheng Wang</a>. -->
-                <!--</p>
-                <p>-->
-                <!-- </p> -->
-                <!-- <p> -->
-                <!--                My research interests focus on 3D Vision, Localization and Navigation, Robotics, and Autonomous Driving.-->
+                Before INSAIT, I completed both my Bachelor's and Master's degrees in Electrical and Computer
+                Engineering at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>, graduating
+                with high distinction (top 5%). My Master's thesis, supervised by
+                <a href="https://cvg.cit.tum.de/members/cremers">Prof. Daniel Cremers</a> and
+                <a href="https://yan-xia.github.io/">Dr. Yan Xia</a>, studied cross-modal place recognition
+                (UniLoc). My Bachelor's thesis, supervised by
+                <a href="https://www.ee.cit.tum.de/mst/team/professor-dr-ing-a-w-koch/">Prof. Alexander W. Koch</a>
+                and <a href="https://www.researchgate.net/profile/Xingchen-Dong">Dr. Xingchen Dong</a>, improved the
+                resolution of hyperspectral imaging with structured illumination. During my graduate studies I spent
+                one year as an exchange student in Computer Science at
+                <a href="https://www.epfl.ch/schools/ic/">École Polytechnique Fédérale de Lausanne (EPFL)</a>, and
+                worked on learning-based shared control for teleoperation with
+                <a href="https://www.ce.cit.tum.de/hcr/team/youssef-michel/">Dr. Youssef Michel</a>.
             </p>
             <font color="#0000dd">
                 <div style="text-align: center;">
@@ -223,323 +149,90 @@
             </font>
         </div>
     </div>
-
-    <div class="section preprints-section scrollspy" id="internship">
-
-        <div class="row container">
-            <div class="row">
-                <div class="title"><img src="https://em-content.zobj.net/source/google/350/graduation-cap_1f393.png"
-                                        alt="Graduation Cap" width="30">
-                    Education and Internship
-                </div>
-                <hr>
-            </div>
-
-            <div class="corp_item">
-                <!--          <img class="corp_logo" style="height:80px;" src="./images/microsoft.png"> &nbsp; &nbsp;-->
-                <!-- <img class="corp_logo" style="height:80px;" src="./images/megvii.png"> &nbsp; &nbsp;
-                <img class="corp_logo" style="height:80px;" src="./images/tencentmap.png"> &nbsp; &nbsp;-->
-                <!--          <img class="corp_logo" style="height:80px;" src="./images/baidu.png"> &nbsp; &nbsp;-->
-                <img class="corp_logo" style="height:80px;" src="./images/TUM_logo3.png">&nbsp; &nbsp;
-                <img class="corp_logo" style="height:80px;" src="./images/logo-epfl.png">&nbsp; &nbsp;
-                <img class="corp_logo" style="height:120px;" src="./images/INSAIT.jpg">&nbsp; &nbsp;
-                <!-- <img class="corp_logo" style="height:80px;" src="./images/fortiss.png">&nbsp; &nbsp; -->
-                <!-- <img class="corp_logo" style="height:80px;" src="./images/bytedance.png"> -->
-            </div>
-
-        </div>
-
-    </div>
-
-    <!--==========================================
-                       News
-    ===========================================-->
-    <div class="section news-section scrollspy" id="news">
-
-        <div class="row container">
-            <div class="row">
-                <div class="title"><img src="https://em-content.zobj.net/source/google/350/fire_1f525.png"
-                                        alt="Fire Emoji" width="30">
-                    News
-                </div>
-                <hr>
-            </div>
-            <div class="row">
-                <ul>
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 07 / 2025: &nbsp; Joined <a href="https://insait.ai/">INSAIT</a> as a researcher!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 12 / 2024: &nbsp; Passed my Master with "high distinction"!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 12 / 2024: &nbsp; Our work <a href="https://ieeexplore.ieee.org/document/10849796">'Judder
-                        Modelling Framework with Perceptual Quality Score Prediction for HDR Videos'</a> is accepted by
-                        VCIP 2024!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 12 / 2023: &nbsp; Our work <a href="https://ieeexplore.ieee.org/abstract/document/10402754">'Subjective
-                        video quality assessment of immersive HDR content on head-mounted displays'</a> is accepted by
-                        VCIP 2023!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 10 / 2023: &nbsp; Our work <a href="https://ieeexplore.ieee.org/abstract/document/10272651">'A
-                        Learning-Based Shared Control Approach for Contact Tasks'</a> is accepted by RA-L!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 08 / 2020: &nbsp; Our work <a
-                            href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11508/115080U/Line-scan-hyperspectral-imaging-microscopy-with-structured-illumination/10.1117/12.2565944.short">'Line-scan
-                        hyperspectral imaging microscopy with structured illumination'</a> is accepted by SPIE Photonics
-                        West!
-                    <li data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"
-                        data-aos-duration="500"
-                        data-aos-once="true" class="aos-init aos-animate">
-                        • 04 / 2020: &nbsp; Our work <a
-                            href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.0c00050">'Line-scan hyperspectral
-                        imaging microscopy with linear unmixing for automated two-dimensional crystals
-                        identification'</a> is accepted by ACS Photonics!
-
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <!--==========================================
-                       Publications
-    ===========================================-->
-    <div class="section publications-section scrollspy" id="publications">
-
-        <div class="row container">
-            <div class="row">
-                <div class="title"><img src="https://em-content.zobj.net/source/google/350/open-book_1f4d6.png"
-                                        alt="Open Book Emoji" width="30">
-                    Publications
-                </div>
-                <hr>
-            </div>
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/UniLoc.png" style="width:300px;height:120px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">UniLoc: Towards Universal Place Recognition Using Any Single Modality</div>
-                    <div class="paper-author">Yan Xia*&dagger;, <font color="#0000dd"><b>Zhendong Li*</b></font>,
-                        Yun-Jin Li, Letian Shi, Hu Cao, João F. Henriques, Daniel Cremers
-                    </div>
-                    <!--                    <div class="paper-conf"><em>Conference on Computer Vision and Pattern Recognition (CVPR) <font-->
-                    <!--                            color="#0000dd"><b></b></font></em>, 2025 Submitted-->
-                    <!--                    </div>-->
-                    <div class="paper-conf"><em>arXiv<font
-                            color="#0000dd"><b></b></font></em>, 2025
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://lizzd.github.io/UniLoc/"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/RA-L.png" style="width:300px;height:140px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">A Learning-Based Shared Control Approach for Contact Tasks</div>
-                    <div class="paper-author">Youssef Michel, <font color="#0000dd"><b>Zhendong Li</b></font>, Dongheui
-                        Lee
-                    </div>
-                    <div class="paper-conf"><em>IEEE Robotics and Automation Letters (RA-L) <font
-                            color="#0000dd"><b></b></font></em>, 2024
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10272651"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/SPIE.png" style="width:300px;height:120px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">Line-scan hyperspectral imaging microscopy with structured illumination
-                    </div>
-                    <div class="paper-author">Xingchen Dong, <font color="#0000dd"><b>Zhendong Li</b></font>, Jie Dong,
-                        Kun Wang, Michael H Köhler, Martin Jakobi, Alexander W Koch
-                    </div>
-                    <div class="paper-conf"><em>SPIE Photonics West<font
-                            color="#0000dd"><b></b></font></em>, 2020
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11508/115080U/Line-scan-hyperspectral-imaging-microscopy-with-structured-illumination/10.1117/12.2565944.short"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/vcip2024.png" style="width:300px;height:150px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">Judder Modelling Framework with Perceptual Quality Score Prediction for HDR
-                        Videos
-                    </div>
-                    <div class="paper-author">Hongjie You, <font color="#0000dd"><b>Zhendong Li</b></font>, Nicola
-                        Giuliani, Atanas Boev, Elena Alshina, Eckehard Steinbach
-                    </div>
-                    <div class="paper-conf"><em>IEEE International Conference on Visual Communications and Image
-                        Processing (VCIP)<font
-                                color="#0000dd"><b></b></font></em>, 2024
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://ieeexplore.ieee.org/document/10849796"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/vcip2023_2.png" style="width:300px;height:140px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">Subjective video quality assessment of immersive HDR content on
-                        head-mounted displays
-                    </div>
-                    <div class="paper-author">Hongjie You, <font color="#0000dd"><b>Zhendong Li</b></font>, Nicola
-                        Giuliani, Atanas Boev, Elena Alshina, Eckehard Steinbach
-                    </div>
-                    <div class="paper-conf"><em>IEEE International Conference on Visual Communications and Image
-                        Processing (VCIP)<font
-                                color="#0000dd"><b></b></font></em>, 2023
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10402754"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <img class="responsive-img" src="./images/ACS.png" style="width:300px;height:120px;">
-                </div>
-
-                <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100"
-                     data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-                    <div class="paper-title">Line-scan hyperspectral imaging microscopy with linear unmixing for
-                        automated two-dimensional crystals identification
-                    </div>
-                    <div class="paper-author">Xingchen Dong, Ali K Yetisen, Heng Tian, İnci Güler, Andreas V Stier,
-                        <font color="#0000dd"><b>Zhendong Li</b></font>, Michael H Köhler, Jie Dong, Martin Jakobi,
-                        Jonathan J Finley, Alexander W Koch
-                    </div>
-                    <div class="paper-conf"><em>ACS Photonics<font
-                            color="#0000dd"><b></b></font></em>, 2020
-                    </div>
-                    <div>
-                        <img class="responsive-img icon" src="./images/pdf.png">
-                        <a href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.0c00050"
-                           target="_blank">[paper] </a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!--<div align='right'> <a href="./publications.html" class="more" target="_blank"><i></i> <font color="#A9A9A9" size="2">LEARN MORE>></font> </a></div> -->
 </div>
 
 
-</div>
-
-
-<!-- ==========================================
-                   Activities
-=========================================== -->
-<!--<div class="section activities-section scrollspy" id="activities">-->
-<!--  <div class="row container">-->
-<!--    <div class="row">-->
-<!--      <div class="title">Academic Services</div>-->
-<!--      <hr>-->
-<!--        <h5>Editor Services</h5>-->
-<!--        <ul>-->
-<!--             Special issue 'Point Cloud Processing with Machine Learning' on Remote Sensing (IF 5.0)-->
-<!--        </ul>-->
-
-<!--        <h5>Conference Reviewers</h5>-->
-<!--        <ul>-->
-<!--          <li>  • Computer Vision and Pattern Recognition (CVPR), 2022, 2023, 2024, 2025</li>-->
-<!--          <li>  • International Conference on Computer Vision (ICCV), 2023</li>-->
-<!--          <li>  • European Conference on Computer Vision (ECCV), 2022, 2024 </li>-->
-<!--          <li>  • Neural Information Processing Systems (NeurIPS), 2023</li>-->
-<!--          <li>  • ACM Multimedia (MM), 2024</li>-->
-<!--          <li>  • International Joint Conference on Artificial Intelligence (IJCAI), 2024</li>-->
-<!--          <li>  • Asian Conference on Computer Vision (ACCV), 2024</li>-->
-<!--          &lt;!&ndash; <li>  • Computer Vision and Pattern Recognition (CVPR), 2024</li> &ndash;&gt;-->
-<!--          &lt;!&ndash; <li>  • Computer Vision and Pattern Recognition (CVPR), 2023</li> &ndash;&gt;-->
-<!--          &lt;!&ndash; <li>  • Computer Vision and Pattern Recognition (CVPR), 2022</li> &ndash;&gt;-->
-<!--          &lt;!&ndash; <li>  • European Conference on Computer Vision (ECCV), 2022</li> &ndash;&gt;-->
-<!--        </ul>-->
-
-<!--        <h5>Journal Reviewers</h5>-->
-<!--        <ul>-->
-<!--          <li>  • IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</li>-->
-<!--          <li>  • IEEE Transactions on Image Processing (T-IP)</li>-->
-<!--          <li>  • ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS-J)-->
-<!--          <li>  • IEEE Transactions on Intelligent Transportation Systems (T-ITS)</li>-->
-<!--          <li>  • IEEE Transactions on Visualization and Computer Graphics (T-VCG)</li>-->
-<!--          <li>  • IEEE Transactions on Geoscience and Remote Sensing (T-GRS)</li>-->
-<!--          <li>  • IEEE Transactions on Intelligent Vehicles (T-IV)</li>          -->
-<!--          <li>  • Pattern Reccognition (PR) </li>-->
-<!--        </ul>-->
-
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<div class="section activities-section scrollspy" id="activities">
+<!--==========================================
+                   Education
+===========================================-->
+<div class="section preprints-section scrollspy" id="education">
     <div class="row container">
         <div class="row">
-            <div class="title"><img src="https://em-content.zobj.net/source/google/350/trophy_1f3c6.png" alt="Trophy"
-                                    width="30">
-                Honors & Awards
+            <div class="title"><img src="https://em-content.zobj.net/source/google/350/graduation-cap_1f393.png"
+                                    alt="Graduation Cap" width="30">
+                Education
             </div>
             <hr>
-            <!--        <h5>Honors & Awards</h5>-->
+        </div>
+
+        <div class="corp_item">
+            <img class="corp_logo" style="height:80px;" src="./images/TUM_logo3.png" alt="TUM">&nbsp; &nbsp;
+            <img class="corp_logo" style="height:80px;" src="./images/logo-epfl.png" alt="EPFL">&nbsp; &nbsp;
+            <img class="corp_logo" style="height:120px;" src="./images/INSAIT.jpg" alt="INSAIT">&nbsp; &nbsp;
+        </div>
+
+        <ul class="edu-list">
+            <li><span class="date">Jul. 2025 – Present</span>• <b>PhD Student in Computer Science</b>, <a href="https://insait.ai/">INSAIT</a>, Sofia, Bulgaria</li>
+            <li><span class="date">Oct. 2020 – Dec. 2024</span>• <b>M.Sc. in Electrical and Computer Engineering</b>, Technical University of Munich, High
+                Distinction (Top 5%)</li>
+            <li><span class="date">Sep. 2021 – Jul. 2022</span>• <b>Exchange Student in Computer Science</b>, EPFL, Lausanne, Switzerland</li>
+            <li><span class="date">Oct. 2017 – Oct. 2020</span>• <b>B.Sc. in Electrical and Computer Engineering</b>, Technical University of Munich</li>
+        </ul>
+    </div>
+</div>
+
+
+<!--==========================================
+                   News
+===========================================-->
+<div class="section news-section scrollspy" id="news">
+    <div class="row container">
+        <div class="row">
+            <div class="title"><img src="https://em-content.zobj.net/source/google/350/fire_1f525.png"
+                                    alt="Fire Emoji" width="30">
+                News
+            </div>
+            <hr>
+        </div>
+        <div class="row">
             <ul>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" alt="Swiss Flag"
-                     width="15">
-                Swiss European Mobility Programme Scholarship
+                <li>• 08 / 2026: &nbsp; <a href="https://frameworkers.insait.ai/">FrameWorkers</a>, our dynamic
+                    multi-agent framework for AI-generated video production, is on arXiv and in the ECCV 2026 Demo
+                    Track!
+                </li>
+                <li>• 07 / 2026: &nbsp; Our work <a href="https://lizzd.github.io/Knowledge-Centric-Agents/">'Knowledge-Centric
+                    Agents for Workflow Generation in ComfyUI'</a> is accepted by ECCV 2026!
+                </li>
+                <li>• 06 / 2026: &nbsp; Co-organized the <a href="https://agentic-visual-media.insait.ai/">Workshop
+                    on Agentic AI for Visual Media</a> at CVPR 2026 in Denver.
+                </li>
+                <li>• 06 / 2026: &nbsp; Co-organized the <a href="https://www.codabench.org/competitions/12918/">NTIRE
+                    2026 Challenge on Event-Based Image Deblurring</a> (CVPR 2026 Workshops).
+                </li>
+                <li>• 07 / 2025: &nbsp; Started my PhD at <a href="https://insait.ai/">INSAIT</a> with the INSAIT PhD
+                    Fellowship!
+                </li>
+                <li>• 12 / 2024: &nbsp; Passed my Master with "high distinction"!</li>
+                <li>• 12 / 2024: &nbsp; Our work <a href="https://ieeexplore.ieee.org/document/10849796">'Judder
+                    Modelling Framework with Perceptual Quality Score Prediction for HDR Videos'</a> is accepted by
+                    VCIP 2024!
+                </li>
+                <li>• 12 / 2023: &nbsp; Our work <a href="https://ieeexplore.ieee.org/abstract/document/10402754">'Subjective
+                    video quality assessment of immersive HDR content on head-mounted displays'</a> is accepted by
+                    VCIP 2023!
+                </li>
+                <li>• 10 / 2023: &nbsp; Our work <a href="https://ieeexplore.ieee.org/abstract/document/10272651">'A
+                    Learning-Based Shared Control Approach for Contact Tasks'</a> is accepted by RA-L!
+                </li>
+                <li>• 08 / 2020: &nbsp; Our work <a
+                        href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11508/115080U/Line-scan-hyperspectral-imaging-microscopy-with-structured-illumination/10.1117/12.2565944.short">'Line-scan
+                    hyperspectral imaging microscopy with structured illumination'</a> is accepted by SPIE Optical
+                    Engineering + Applications!
+                </li>
+                <li>• 04 / 2020: &nbsp; Our work <a href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.0c00050">'Line-scan
+                    hyperspectral imaging microscopy with linear unmixing for automated two-dimensional crystals
+                    identification'</a> is accepted by ACS Photonics!
+                </li>
             </ul>
         </div>
     </div>
@@ -547,89 +240,237 @@
 
 
 <!--==========================================
-                   Education
+                   Publications
 ===========================================-->
-<!--<div class="section education-section scrollspy" id="education">
-  <div class="row container">
-    <div class="row">
-      <div class="title">Education</div>
-      <hr>
-    </div>
-    
-    <div class="row">
-        <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-          <a href="https://www.ahut.edu.cn/" target="_blank">
-            <img src="./images/ahust.jpg" style="width:110px;height:110px;" align="center" class="img-responsive edu-img">
-          </a>
+<div class="section publications-section scrollspy" id="publications">
+    <div class="row container">
+        <div class="row">
+            <div class="title"><img src="https://em-content.zobj.net/source/google/350/open-book_1f4d6.png"
+                                    alt="Open Book Emoji" width="30">
+                Publications
+            </div>
+            <hr>
+            <p class="pub-note">* equal contribution &nbsp; † corresponding author</p>
         </div>
 
-        <div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-          <p></p>
-          <p></p>
-          <p></p>
-          <div class="degree"></div>
-          <div class="degree"><b>B.E.</b> degree from School of Mechanical Engineering, <a href="https://www.ahut.edu.cn/">Anhui University of Technology</a>, Anhui, China</div>
-          <div class="date">Sep. 2013 - July 2017</div>
+        <!-- Knowledge-Centric Agents, ECCV 2026 -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/kca_eccv2026.jpg"
+                     alt="Knowledge-Centric Agents demo">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">Knowledge-Centric Agents for Workflow Generation in ComfyUI</div>
+                <div class="paper-author"><font color="#0000dd"><b>Zhendong Li</b></font>, Lei Sun, Ruibo Ming,
+                    He Zhang, Danda Pani Paudel, Luc Van Gool, Jinjin Gu
+                </div>
+                <div class="paper-conf"><em>European Conference on Computer Vision (ECCV)</em>, 2026</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://arxiv.org/abs/2607.15845" target="_blank">[arXiv]</a>
+                    <img class="responsive-img icon" src="./images/project.png" alt="">
+                    <a href="https://lizzd.github.io/Knowledge-Centric-Agents/" target="_blank">[project page]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FrameWorkers, ECCV 2026 Demo -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <a href="https://frameworkers.insait.ai/" target="_blank"><img class="responsive-img pub-thumb" src="./images/frameworkers.jpg"
+                                                                    alt="FrameWorkers"></a>
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">FrameWorkers: A Dynamic Multi-Agent Framework for AI-Generated Video
+                    Production
+                </div>
+                <div class="paper-author"><font color="#0000dd"><b>Zhendong Li</b></font>, Lei Sun, Letian Shi,
+                    Deheng Zhang, Ruibo Ming, Mengshun Hu, Dannong Xu, Jian Wang, Danda Pani Paudel, Luc Van Gool,
+                    Jinjin Gu
+                </div>
+                <div class="paper-conf"><em>ECCV 2026 Demo Track</em>; submitted to ICLR 2027</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://arxiv.org/abs/2608.29814" target="_blank">[arXiv]</a>
+                    <img class="responsive-img icon" src="./images/project.png" alt="">
+                    <a href="https://frameworkers.insait.ai/" target="_blank">[website]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UniLoc -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/UniLoc.png" alt="UniLoc">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">UniLoc: Towards Universal Place Recognition Using Any Single Modality</div>
+                <div class="paper-author">Yan Xia*&dagger;, <font color="#0000dd"><b>Zhendong Li*</b></font>,
+                    Yun-Jin Li, Letian Shi, Hu Cao, João F. Henriques, Daniel Cremers
+                </div>
+                <div class="paper-conf"><em>arXiv</em>, 2024; under review at IEEE TPAMI</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://arxiv.org/abs/2412.12079" target="_blank">[arXiv]</a>
+                    <img class="responsive-img icon" src="./images/project.png" alt="">
+                    <a href="https://lizzd.github.io/UniLoc/" target="_blank">[project page]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- RA-L -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/RA-L.png" alt="RA-L 2023">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">A Learning-Based Shared Control Approach for Contact Tasks</div>
+                <div class="paper-author">Youssef Michel, <font color="#0000dd"><b>Zhendong Li</b></font>, Dongheui
+                    Lee
+                </div>
+                <div class="paper-conf"><em>IEEE Robotics and Automation Letters (RA-L)</em>, 2023</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10272651" target="_blank">[paper]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VCIP 2024 -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/vcip2024.png" alt="VCIP 2024">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">Judder Modelling Framework with Perceptual Quality Score Prediction for HDR
+                    Videos
+                </div>
+                <div class="paper-author">Hongjie You, <font color="#0000dd"><b>Zhendong Li</b></font>, Nicola
+                    Giuliani, Atanas Boev, Elena Alshina, Eckehard Steinbach
+                </div>
+                <div class="paper-conf"><em>IEEE International Conference on Visual Communications and Image
+                    Processing (VCIP)</em>, 2024
+                </div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://ieeexplore.ieee.org/document/10849796" target="_blank">[paper]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VCIP 2023 -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/vcip2023_2.png" alt="VCIP 2023">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">Subjective Video Quality Assessment of Immersive HDR Content on Head-Mounted
+                    Displays
+                </div>
+                <div class="paper-author">Hongjie You, <font color="#0000dd"><b>Zhendong Li</b></font>, Nicola
+                    Giuliani, Atanas Boev, Elena Alshina, Eckehard Steinbach
+                </div>
+                <div class="paper-conf"><em>IEEE International Conference on Visual Communications and Image
+                    Processing (VCIP)</em>, 2023
+                </div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10402754" target="_blank">[paper]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPIE 2020 -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/SPIE.png" alt="SPIE 2020">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">Line-scan Hyperspectral Imaging Microscopy with Structured Illumination</div>
+                <div class="paper-author">Xingchen Dong, <font color="#0000dd"><b>Zhendong Li</b></font>, Jie Dong,
+                    Kun Wang, Michael H. Köhler, Martin Jakobi, Alexander W. Koch
+                </div>
+                <div class="paper-conf"><em>Proc. SPIE Optical Engineering + Applications</em>, 2020</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11508/115080U/Line-scan-hyperspectral-imaging-microscopy-with-structured-illumination/10.1117/12.2565944.short"
+                       target="_blank">[paper]</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACS Photonics 2020 -->
+        <div class="row">
+            <div class="col s12 m12 l4 center">
+                <img class="responsive-img pub-thumb" src="./images/ACS.png" alt="ACS Photonics 2020">
+            </div>
+            <div class="col s12 m12 l8">
+                <div class="paper-title">Line-scan Hyperspectral Imaging Microscopy with Linear Unmixing for
+                    Automated Two-Dimensional Crystals Identification
+                </div>
+                <div class="paper-author">Xingchen Dong, Ali K. Yetisen, Heng Tian, İnci Güler, Andreas V. Stier,
+                    <font color="#0000dd"><b>Zhendong Li</b></font>, Michael H. Köhler, Jie Dong, Martin Jakobi,
+                    Jonathan J. Finley, Alexander W. Koch
+                </div>
+                <div class="paper-conf"><em>ACS Photonics</em>, 2020</div>
+                <div class="pub-links">
+                    <img class="responsive-img icon" src="./images/pdf.png" alt="">
+                    <a href="https://pubs.acs.org/doi/full/10.1021/acsphotonics.0c00050" target="_blank">[paper]</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--==========================================
+                   Academic Service & Open Source
+===========================================-->
+<div class="section news-section scrollspy" id="service">
+    <div class="row container">
+        <div class="row">
+            <div class="title"><img src="https://em-content.zobj.net/source/google/350/handshake_1f91d.png"
+                                    alt="Handshake" width="30">
+                Academic Service &amp; Open Source
+            </div>
+            <hr>
+        </div>
+        <ul class="service-list">
+            <li><span class="date">Jun. 2026</span>• <b>Workshop Organizer</b>, <a href="https://agentic-visual-media.insait.ai/">Workshop on Agentic AI
+                for Visual Media</a>, CVPR 2026, Denver<div class="item-desc">Built and maintained the workshop website; reviewed submissions for the paper track.</div>
+            </li>
+            <li><span class="date">Jan. – Jun. 2026</span>• <b>Challenge Organizer</b>, <a href="https://www.codabench.org/competitions/12918/">NTIRE 2026
+                Challenge on Event-Based Image Deblurring</a>, CVPR 2026<div class="item-desc">153 registrants, 10 finalist teams; developed the evaluation code and co-authored the challenge report.</div>
+            </li>
+            <li><span class="date">Apr. – Oct. 2023</span>• <b>Open-Source Contributor</b>, <a
+                    href="https://gitlab.com/wg1/jpeg-ai/jpeg-ai-qaf/-/tree/feature/HDR-VDP2.2/main?ref_type=heads">JPEG
+                AI Quality Assessment Framework</a><div class="item-desc">Implemented the HDR-VDP-2 and HDR-VDP-3 perceptual quality metrics for HDR content.</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--==========================================
+                   Honors & Awards
+===========================================-->
+<div class="section activities-section scrollspy" id="activities">
+    <div class="row container">
+        <div class="row">
+            <div class="title"><img src="https://em-content.zobj.net/source/google/350/trophy_1f3c6.png" alt="Trophy"
+                                    width="30">
+                Honors &amp; Awards
+            </div>
+            <hr>
+            <ul>
+                <li>• <b>INSAIT PhD Fellowship</b>, fully funded doctoral fellowship at INSAIT, 2025</li>
+                <li>• <b>Swiss European Mobility Programme Scholarship</b>, two-semester EPFL exchange, 2021</li>
+            </ul>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-          <a href="https://www.hnu.edu.cn/" target="_blank">
-            <img src="./images/HNU.png" style="width:110px;height:110px;" align="center" class="img-responsive edu-img"> -->
-<!-- <img src="./images/iecas.jpeg" style="width:100px;height:100px;" align="center" class="img-responsive edu-img"> -->
-<!-- <img src="./images/air.png" style="width:100px;height:100px;" align="center" class="img-responsive edu-img"> -->
-<!--  </a>
 </div>
-
-<div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-  <p></p>
-  <p></p>
-  <p></p>
-  <div class="degree"></div>
-  <div class="degree"><b>M.E.</b> degree from <a href="http://mve.hnu.edu.cn/">College of Mechanical and Vehicle Engineering</a>, <a href="http://dmvb.hnu.edu.cn/index.htm">State key laboratory of advanced design and manufacturing for vehicle body</a> of <a href="https://www.hnu.edu.cn/">HuNan University</a>, HuNan, China</div>
-  <div class="date">Sep. 2017 - July 2019</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col s12 m12 l4 center aos-init aos-animate" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-  <a href="https://www.tum.de/en/" target="_blank">
-    <img src="./images/Tum_logo.gif" style="width:110px;height:110px;" align="center" class="img-responsive edu-img">
-  </a>
-</div>
-
-<div class="col s12 m12 l8 aos-init aos-animate" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true">
-  <p></p>
-  <p></p>
-  <p></p>
-  <div class="degree"><b>Ph.D.</b> in <a href="https://www.in.tum.de/i06/home/">Chair of Robotics, AI and Real-time Systems</a>, Department of Informatics</a>, <a href="https://www.tum.de/en/">Technical University of Munich</a>, Munich, Germany</div>
-  <div class="date">Jan. 2020 - Present</div>
-</div>
-</div>
-</div>
-</div> -->
-
-
-<!-- ==========================================
-                   Demo
-=========================================== -->
-<!--<div class="section awards-section scrollspy" id="demos">-->
-<!--    <div class="row container">-->
-<!--        <div class="row">-->
-<!--            <div class="title">💻 Demos</div>-->
-<!--            <hr>-->
-<!--            <video width="640" height="360" controls autoplay>-->
-<!--                <source src="./videos/demo2_resized.mp4" type="video/mp4">-->
-<!--            </video>-->
-<!--            &lt;!&ndash; <video width="640" height="360" controls autoplay>-->
-<!--              <source src="./videos/RoboticGraspingMusic.mp4" type="video/mp4">-->
-<!--            </video> &ndash;&gt;-->
-<!--            &lt;!&ndash; <img src="https://api.star-history.com/svg?repos=yangxue0827/RotationDetection&type=Date" style="width:600px;" /> &ndash;&gt;-->
-<!--            &lt;!&ndash; <img src="https://api.star-history.com/svg?repos=open-mmlab/mmrotate&type=Date" style="width:600px;" /> &ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 
 <!--==========================================
@@ -638,27 +479,14 @@
 <footer class="page-footer grey lighten-2">
     <div class="row">
         <div class="widgetContainer" style="width:300px; margin: 0 auto;">
-            <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=JmtGDoLvSHQtPqCWd8cr5dhSABXJqV6QbEaaA2Gp1xU'></script> -->
-            <!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=52alcfaz816&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script> -->
-            <!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=52alcfaz816&amp;m=1&amp;c=ff007e&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=5" async="async"></script> -->
-            <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=WZiQDjEBsbIqdM9REi8r4vlsncoMqKoPdcGbWIQGBRs"></script> -->
-            <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=WZiQDjEBsbIqdM9REi8r4vlsncoMqKoPdcGbWIQGBRs&cl=ffffff&w=a"></script> -->
             <script type="text/javascript" id="clustrmaps"
                     src="//clustrmaps.com/map_v2.js?d=bapgFgaB5SNtgvesuQguOJAd14a8OYxCqx0S3C0l-Nw&cl=ffffff&w=a"></script>
         </div>
     </div>
     <div class="footer-copyright center black-text">
-        Copyright © Zhendong Li 2025
+        Copyright © Zhendong Li 2026 · Last updated November 2026
     </div>
 </footer>
 
-<!--  Scripts-->
-<script src="./files/jquery-2.1.1.min.js"></script>
-<script src="./files/materialize.js"></script>
-<script src="./files/aos.js"></script>
-<script src="./init.js"></script>
-
-</div>
-<div class="jvectormap-tip"></div>
 </body>
 </html>
